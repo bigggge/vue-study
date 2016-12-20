@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html data-framework="vue">
+<head>
+    <meta charset="UTF-8">
+    <title>todo-list</title>
+
+</head>
+<body>
+<div id="todo-list-example">
+    <input
+            v-model="newTodoText"
+            @keyup.enter="addNewTodo"
+            placeholder="Add a todo">
+    <ul>
+        <li
+                is="todo-item"
+                v-for="(todo,index) in todos"
+                :title="todo"
+                @remove="todos.splice(index,1)"
+        ></li>
+    </ul>
+</div>
+</body>
+
+<script src="../vue/vue.js"></script>
+<script src="app.js"></script>
+
+</html>
