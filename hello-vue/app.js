@@ -8,5 +8,11 @@ new Vue({
     el: '#app',
     data: {
         message: 'Hello Vue.js!'
+    },
+    created(){
+        let that = this;
+        setInterval(function () {
+            that.message += '123'
+        }, 1000)
     }
 })
