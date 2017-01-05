@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <!-- 引入vue.js -->
+    <script src="../../vue-lib/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <div id="hook-arguments-example" v-demo:hello.a.b="message"></div>
+    <!--<input v-focus>-->
+    <input v-if="message" v-model="message" v-focus>
+    <button @click="update">更新</button>
+    <button @click="uninstall">卸载</button>
+    <button @click="install">安装</button>
+</div>
+
+</div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
